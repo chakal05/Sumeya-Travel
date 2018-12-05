@@ -1,0 +1,271 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: 'PT Sans', sans-serif;
+    overflow: hidden;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+#container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,minmax(400px,1fr));
+    grid-template-rows: minmax(50px,auto);
+    background-image: url("leaves.jpg");
+    background-repeat: no-repeat;
+    background-position: center top 29%;
+    background-size: cover;
+    height: 580px;
+  
+}
+
+.navbar{
+    grid-column: 1/-1;
+    margin:0;
+    padding: 0;    
+    text-align: center;
+}
+.navbar ul{  
+    list-style: none;
+    margin-left: 40px;
+    padding: 10px;
+    top: 10px;
+    float: left;
+    margin-top: 105px;
+}
+.navbar ul li{
+    font-size: 21px;
+    display: inline-block;
+    margin-right: 50px;
+    margin-left: 25px;
+    padding: 10px;
+}
+.navbar ul li a{
+    font-size: 23px;
+    text-decoration: none;
+    width: 200px;
+    height: 30px;
+    
+}
+.navbar ul li a:hover,
+.navbar ul li a:focus{
+   background-color: cyan;
+    color:white;
+}
+  .home{
+    background-color: yellow;
+    padding: 10px;
+
+    border-radius: 12px;
+}
+.home a{
+ color: green;
+}
+.project{
+    background-color: green;
+    border-radius: 13px;
+
+}
+
+.about{
+    background-color: rgb(185, 133, 238);
+    padding-bottom: 20px;
+}
+.about a{
+    color: white;
+
+}
+.project a{
+    color: yellow;
+   
+}
+.contact{
+    background-color: rgb(240, 9, 248);
+    padding-bottom: 20px;
+   
+ 
+}
+.contact a {
+    color:greenyellow;
+}
+.fa-linkedin {
+font-size: 41px;
+color: white;
+}
+.fa-github-square{
+    font-size: 41px;
+    color: rgb(166, 223, 74);
+}
+.fa-envelope {
+    font-size: 41px;
+    color:rgba(42, 240, 240, 0.685);
+}
+.name {
+    grid-column: 1/-1;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    
+}
+.name p{
+    color: #ffffff;
+    margin-top: 10px;
+    font-size: 55px;
+}
+
+.title{
+    grid-column: 1/-1;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    
+}
+.title p{
+    font-size: 55px;
+    margin-top: 130px;
+    color: #ffffff;
+}
+
+
+/*Queries for  tablets*/
+@media(max-width:800px){
+    #container{
+        width: 100%;
+        text-align: center;
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+  .name,
+  .title,
+  .navbar{
+      width: 100%;
+      text-align: center;
+  }
+    .navbar ul{
+        float: none;
+        margin-top: 10px;
+        margin-bottom: -5px;
+        width: 100%;
+        
+    }
+    .navbar ul li {
+        display: block;
+       width: 230px;
+       height: 30px;
+        font-size: 17px;
+       margin: 10px;
+       margin-left: 223px;
+       padding: 5px;
+    }
+    .navbar ul li a{
+        font-size: 15px;
+    }
+    .fa-linkedin{
+        font-size: 19px;
+    }
+    .fa-envelope{
+        font-size: 19px;
+    }
+    .fa-github-square{
+        font-size: 19px;
+    }
+    .name,
+    .title{
+        text-align: center;
+ 
+    }
+    .name p,
+  .title p{
+      font-size: 35px;
+      margin-top: 20px;
+      border: 1px solid;
+      margin-left: 190px;
+      background-color:black;
+      width: 400px;
+      height: 70px;
+      padding: 10px;
+      border-radius: 34px;
+    
+  }
+}   
+  /*Queries for mobile*/
+@media(max-width:620px){
+    #container{
+        width: 100%;
+        text-align: center;
+        background-image: url("leaves.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+    .name,
+  .title,
+  .navbar{
+      width: 100%;
+      text-align: center;
+  }
+    .navbar ul{
+        float: none;
+        margin-top: 10px;
+        margin-bottom: -55px;
+        width: 100%;
+        
+    }
+    .navbar ul li {
+        display: block;
+       width: 230px;
+       height: 30px;
+        font-size: 17px;
+       margin: 10px;
+       margin-left: 20px;
+       padding: 5px;
+    }
+    .navbar ul li a{
+        font-size: 15px;
+    }
+    .fa-linkedin{
+        font-size: 19px;
+    }
+    .fa-envelope{
+        font-size: 19px;
+    }
+    .fa-github-square{
+        font-size: 19px;
+    }
+    .name,
+    .title{
+        text-align: center;
+        transform: translateX(0%);
+    }
+    .name p,
+  .title p{
+      font-size: 25px;
+      margin-top: 20px;
+      border: 1px solid;
+      margin-left: 30px;
+      background-color: greenyellow;
+      color:black;
+      width: 300px;
+      height: 70px;
+      padding: 15px;
+      border-radius: 34px;
+    
+  }
+}

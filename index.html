@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>wafaa resor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="safar.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" >
+    <link href="https://fonts.googleapis.com/css?family=Nova+Mono" rel="stylesheet">
+    <script src="jquery.min.js"> </script>
+</head>
+
+<body>
+
+                 <div id="container">
+                    <section class="top">        
+                    <button class="toggle" id="itoggle"> <i class="fas fa-bars "></i></button>
+
+                     <div class="logo">
+                         <h1>Sola</h1>
+                         <h2>Travel</h2>
+                         <p>Scandinavia</p>
+          
+                        </div>
+
+                      <div class="header">
+                <ul>
+
+                         <li><a href="index.html">Startsida</a></li>   
+                        <li><a href="wafaaresor.html" >Om oss</a></li>
+                        <li><a href="erbjudande.html">Populära sökningar</a></li>  
+                        <li><a href="frågorochsvår.html"> Frågor & Svar</a></li>
+                        <li><a href="resevillkor.html">resevillkor</a></li>
+                        <li><a href="kontakt.html">Kontakt</a> </li>
+                 </ul>
+                     </div>
+                
+                    </section>
+
+    <div class="pub">
+
+        <h1>Billiga resor och flygbiljetter</h1>
+
+        <p>På Sola Travel Scandinavia bokar du billiga flyg till hela världen.</p>
+
+        <button  ><a id="btn" href="wafaaresor.html">Läs mer</a></button>
+    
+    </div>
+  
+
+    
+    
+
+    <footer>
+        <div class="list2">
+        <ul >
+           <li><i class="fab fa-cc-mastercard"></i></li>
+           <li><i class="fab fa-cc-visa"></i></li>
+           <li><i class="fab fa-cc-paypal"></i></li>
+           </ul> 
+        </div>
+
+        <div class="list1">
+           <ul >
+               <li>Sola Travel Scandinavia</li>
+               <li> Vasaplatsen 10, 411 34 Göteborg</li>
+               <li> Tel: 031-13 68 00</li>
+               
+      </ul>
+    </div>
+
+        </footer>
+
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+
+shown();
+
+})
+
+function shown(){
+    $("#itoggle").click(function(){
+      $(".pub").hide();
+        $(".header ul li").show(hidden());
+    })
+}
+
+function hidden(){
+        $("#itoggle").click(function(){
+            $(".pub").show();
+            $(".header ul li").hide(shown());
+        })
+    }
+</script>
+</body>
+</html>

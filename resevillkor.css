@@ -1,0 +1,245 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+}
+body{
+    overflow-x: hidden;
+}
+
+#container{
+    width: 100%;
+     display: grid;
+     grid-template-columns: repeat(6,minmax(100px,1fr));
+     grid-template-rows: minmax(50px,auto);
+     grid-gap: 5px;
+}
+.top{
+    grid-column: 1/-1;
+    text-align: center;
+    color: #007FFF;
+  
+}
+.header{
+   text-align: center;
+  
+}
+.header ul{
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+}
+.header ul li{
+    display: inline-block;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin-right: 30px;
+    margin-left: 20px;
+    text-transform: uppercase;
+ 
+}
+.header ul li a:hover {
+    background-color:#1F1F1F;
+    color: #fff;
+ }
+.header ul li a{
+    text-decoration: none;
+    color:#007FFF;
+    padding: 15px;
+     font-size: 14px;
+     height: 30px;
+     width: 150px;
+     border-radius: 3px;
+}
+.logo{
+    width: 70px;
+    height: 60px;   
+   position: absolute;
+   top: -2%;
+   left: 7px;
+}
+.logo h1{
+   font-size: 53px;
+   text-transform: lowercase;
+   margin: 0;
+   font-family: 'Nova Mono', monospace;
+   letter-spacing: -9px;;
+}
+.logo h2{
+    position: absolute;
+    top: 93%;
+    left: 5%;
+    text-transform: uppercase;
+    font-size: 21px;
+}
+.logo p{
+    font-size: 12px;
+    position: relative;
+    left: 33%;
+    font-weight: bold;
+}
+
+.toggle{
+    display: none;
+    float: right;
+}
+
+.ligne1{
+    grid-column: 1/-1;
+    position: absolute;
+    top: 13%;
+    left: 40%;
+    color: #007FFF;
+   
+}
+.ligne1 h2{
+    width: 150px;
+    height: 40px;
+    font-size: 19px;
+    padding: 10px;
+   
+}
+.bigBox{
+    grid-column: 1/-1;
+    margin-top: 40px;
+   max-height: 300px;
+    padding: 5px;
+    
+}
+footer{
+    grid-column: 1/-1;
+    position: absolute;
+    bottom: -21%;
+    background-color: #007FFF;
+    text-align: center;
+    height: 70px;
+    width: 100%;
+}
+.list1,
+.list2 {
+    margin-top: 10px;
+   list-style: none;
+}
+.list1 li,
+.list2 li{
+    display: inline-block;
+    margin-right: 30px;
+    color: #fff;
+}
+/*Queries for tablets*/
+@media(max-width: 960px){
+    body{
+        overflow-x: hidden;
+    }
+    #container{
+        width: 100%;
+        grid-template-columns: repeat(6,minmax(100px,1fr));
+     grid-template-rows: minmax(50px,auto);
+     grid-gap: 5px;
+    }
+    .top{
+        grid-column: 1/-1;
+        width: 100%;
+    }
+    
+    .header ul{
+        width: 100%;
+        background-color: #000000;
+       margin-top: 20px;
+       margin-right: 0;
+        
+    }
+    .header ul li{
+     display: none; 
+     text-align:center;
+     font-size: 13px;
+     margin-bottom: 20px;
+     padding: 5px;
+     
+        }
+    .header ul li a{
+        color: #fff;
+    }
+    .toggle{
+        display: block;
+        margin: 21px;
+        font-size: 20px;
+        background-color:#fff;
+        color: #007FFF;
+    }
+    .ligne1{
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 7px;
+        background-color: #007FFF;
+        color: #fff;
+        width: 150px;
+        padding: 11px;
+        
+    }
+    .bigBox{
+        grid-column: 1/-1;
+    margin-top: 50px;
+   max-height: 300px;
+    padding: 5px;
+    }
+
+    footer{
+     width: 100%;
+     height: 70px;
+     position: absolute;
+     bottom: -38%;
+    }
+}
+
+/*Queries for mobile phones*/
+@media(max-width: 660px){
+    body{
+        overflow-x: hidden;
+    }
+    #container{
+        width: 100%;
+        grid-template-columns: repeat(6,minmax(10px,1fr));
+     grid-template-rows: minmax(50px,auto);
+     grid-gap: 5px;
+    }
+    .top{
+        grid-column: 1/-1;
+        width: 100%;
+    }
+    
+    .header ul li{
+        display: none;
+    }
+    .toggle{
+        display: block;
+        margin: 20px;
+        font-size: 20px;
+    }
+    .ligne1{
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 4px;
+        width: 150px;
+    }
+        
+    .bigBox{
+        grid-column: 1/-1;
+        width: 100%;
+        margin-right: 0;
+
+    }
+    footer{
+        width: 100%;
+        height: 80px;
+       position: absolute;
+       bottom: -107%;
+    }
+   
+
+
+}

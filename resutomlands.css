@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+}
+
+#container{
+    width: 100%;
+     display: grid;
+     grid-template-columns: repeat(5,minmax(200px,1fr));
+     grid-template-rows: minmax(50px,auto);
+     grid-gap: 0;
+}
+.top{
+    grid-column: 1/-1;
+}
+.header{
+   
+}
+.header ul{
+    float: right;
+    list-style: none;
+    margin-right: 50px;
+}
+.header ul li{
+    display: inline-block;
+    margin-top: 25px;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-left: 30px;
+    padding: 15px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.header ul li a{
+    text-decoration: none;
+    color: #000000;
+}
+.logo{
+    width: 70px;
+    height: 60px;   
+   position: absolute;
+   top: -2%;
+   left: 7px;
+   
+}
+.logo h1{
+   font-size: 53px;
+   text-transform: lowercase;
+   margin: 0;
+   font-family: 'Nova Mono', monospace;
+   letter-spacing: -9px;;
+}
+.logo h2{
+    position: absolute;
+    top: 93%;
+    left: 5%;
+    text-transform: uppercase;
+    font-size: 21px;
+}
+.logo p{
+    font-size: 12px;
+    position: relative;
+    left: 33%;
+    font-weight: bold;
+}
+
+#menu{
+    display: none;
+}
+.toggle{
+    display: none;
+}
+
+    .ligne{
+        grid-column: 1/-1;
+        text-align: center;
+    }
+    .ligne h3{
+      
+    }
+    
+    .ligne p{
+        margin: 15px;
+        font-size: 19px;
+        padding: 20px;
+    }
+  .sommar,
+  .vinter{
+      grid-column: 1/-1;
+      text-align: center;
+      margin: 30px;
+      padding: 10px;
+      font-weight: bold;
+  }
+  .sommar,
+  .vinter p{
+    font-size: 23px;
+  }
+
+    .c1 img,
+    .c2 img,
+    .c3 img,
+    .c4 img,
+    .c5 img,
+    .c6 img{
+     width: 278px;
+     height: 190px;
+       
+    }
+    
+    .c1 p,
+    .c2 p,
+    .c3 p,
+    .c4 p,
+    .c5 p,
+    .c6 p{
+        margin: 10px;
+        font-size: 17px;
+    }
+    
+       
+    footer{
+        width: 100%;
+        background-color: #1F1F1F;
+        text-align: center;
+        height: 70px;
+    
+    }
+    .list1,
+    .list2 {
+        margin-top: 10px;
+       list-style: none;
+    }
+    .list1 li,
+    .list2 li{
+        display: inline-block;
+        margin-right: 30px;
+        color: #fff;
+    }

@@ -1,0 +1,380 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+}
+
+#container{
+    width: 100%;
+     display: grid;
+     grid-template-columns: repeat(4,minmax(200px,1fr));
+     grid-template-rows: minmax(50px,auto);
+     grid-gap: 0;
+}
+.top{
+    grid-column: 1/-1;
+    text-align: center;
+}
+.header{
+   height: 580px;
+   background-image: url('asoggetti.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+  background-position: center;
+   text-align: center;
+   
+}
+.header ul{
+    float: right;
+    list-style: none;
+    margin: 40px;
+    margin-top: 10px;
+}
+.header ul li{
+    display: inline-block;
+    margin-top: 25px;
+    font-weight: bold;
+    margin-right: 30px;
+    margin-left: 20px;
+    text-transform: uppercase;
+  
+}
+.header ul li a:hover {
+    background-color:#1F1F1F;
+    color: #fff;
+ }
+.header ul li a{
+    text-decoration: none;
+    color:#223242;
+    padding: 15px;
+     font-size: 14px;
+     height: 30px;
+     width: 150px;
+     border-radius: 3px;
+}
+.logo{
+    width: 70px;
+    height: 60px;   
+    color: #223242;
+   position: absolute;
+   top: -2%;
+   left: 7px;
+}
+.logo h1{
+   font-size: 53px;
+   text-transform: lowercase;
+   margin: 0;
+   font-family: 'Nova Mono', monospace;
+   letter-spacing: -9px;;
+}
+.logo h2{
+    position: absolute;
+    top: 93%;
+    left: 5%;
+    text-transform: uppercase;
+    font-size: 21px;
+}
+.logo p{
+    font-size: 12px;
+    position: relative;
+    left: 33%;
+    font-weight: bold;
+}
+
+
+.toggle{
+    display: none;
+    float: right;
+}
+
+.presentation{
+        position: absolute;
+        top: 15%;
+        padding: 30px;
+        color: #ffffff;
+        text-align: center;
+    }
+    .presentation h1{
+        font-size: 49px;
+        margin-bottom: 95px;
+        color: #223242;
+    }
+    .presentation p{
+        font-size: 33px;
+        padding: 10px;
+    }
+    .presentation a {
+        color: #fff;
+        font-size: 55px;
+        position: relative;
+        top: 55px;
+    }
+    
+    .pub{
+        text-align: center;
+        grid-column: 1/-1;
+        padding: 7%;
+        background-color: #e2dfdf;
+        color: #141937;
+      
+    }
+    .pub h2{
+        font-size: 29px;
+        margin-bottom: 20px;
+        margin-top: -40px;
+    }
+    .pub p{
+        font-size: 21px;
+    }
+
+    .sidepub{
+        grid-column: 3/-1;
+        padding: 10%;
+        text-align: center;
+    }
+    .sidepub h2,
+    .row3pub h2{
+        margin-top: 50px;
+        font-size: 30px;
+    }
+    .sidepub p,
+    .row3pub p{
+        font-size: 21px;
+        margin-top: 10px;
+        padding: 10px;
+        line-height: 25px;
+    }
+    .row2pic{
+        grid-column: 1/3;
+       
+    }
+    
+    .row3pic{
+        grid-column: 3/-1;
+    }
+    
+    .row3pub{
+        grid-column: 1/3;
+        text-align: center;
+        padding: 10%;
+    }
+    
+    footer{
+        grid-column: 1/-1;
+        background-color: #1F1F1F;
+        height: 100px;
+        text-align: center;
+    }
+    .list1,
+    .list2 {
+        margin: 10px;
+       list-style: none;
+       margin-left: 95px;
+    }
+    .list1 li,
+    .list2 li{
+        display: inline-block;
+        margin-right: 90px;
+        color: #fff;
+        margin-top: 5px;
+    }
+/*Queries for tablets*/
+@media(max-width:1060px){
+        #container{
+            width: 100%;
+             display: grid;
+             grid-template-columns: repeat(3,minmax(100px,1fr));
+             grid-template-rows: minmax(50px,auto);
+             grid-gap: 0;
+        }
+        img{
+            width: 100%;
+        }
+        .top {
+            grid-column: 1/-1;
+        }
+        .header ul{
+            width: 100%;
+            background-color: #000000;
+           margin-top: 20px;
+           margin-right: 0;
+            
+        }
+        .header ul li{
+         display: none; 
+         text-align:center;
+         font-size: 13px;
+         
+            }
+        .header ul li a{
+            color: #fff;
+        }
+        .toggle{
+            display: block;
+            margin-right: 15px;
+            margin-top: 23px;
+            font-size: 23px;
+            padding-top: 3px;
+            
+        }
+
+        .presentation{
+            position: absolute;
+            top: 20%;
+            padding: 30px;
+            color: #fff;
+            text-align: center;
+        }
+        .presentation h1{
+            font-size: 39px;
+            margin-bottom: 85px;
+            color: #223242;
+        }
+        .presentation p{
+            font-size: 27px;
+            padding: 10px;
+        }
+        .presentation a {
+            color: #fff;
+            font-size: 41px;
+            position: relative;
+            top: 45px;
+        }
+        .pub{
+            width: 100%;
+        }
+        .pub h2{
+            font-size: 29px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+        .pub p{
+            font-size: 21px;
+        }
+        .sidepub{
+            display: none;
+             }
+       .row2pic{
+        grid-column: 1/-1;
+       }
+       .row3pic{
+        grid-column: 1/-1;
+       }
+       .row3pub{
+        grid-column: 1/-1;
+       }
+       
+        footer{
+         grid-column: 1/-1;
+         height: 150px;
+        }
+
+        .list1 ul li,
+        .list2 ul li{
+            margin-bottom: 5px;
+        }
+
+    }
+    
+/*Queries for mobile phones*/
+
+@media (max-width: 600px){
+    #container{
+        width: 100%;
+        
+    }
+    .top{
+        grid-column: 1/-1;
+        position: relative;
+    }
+    img{
+        width: 100%;
+    }
+    .header ul{
+        width: 100%;
+        background-color: #000000;
+       margin-top: 40px;
+       margin-right: 0;
+        
+    }
+    .header ul li{
+     display: none; 
+     text-align:center;
+     font-size: 13px;
+     margin-bottom: 15px;
+     
+        }
+    .header ul li a{
+        color: #fff;
+    }
+    .toggle{
+        display: block;
+        margin-right: 15px;
+        margin-top: 23px;
+        font-size: 23px;
+        padding-top: 3px;
+        
+    }
+
+    .presentation{
+        position: absolute;
+        top: 15%;
+        padding: 30px;
+        color: #fff;
+        text-align: center;
+    }
+    .presentation h1{
+        font-size: 39px;
+        margin-bottom: 45px;
+    }
+    .presentation p{
+        font-size: 23px;
+        padding: 10px;
+    }
+    .presentation a {
+        color: #fff;
+        font-size: 41px;
+        position: relative;
+        top: 35px;
+    }
+    .pub{
+        width: 100%;
+    }
+    .pub h2{
+        font-size: 29px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .pub p{
+        font-size: 21px;
+    }
+   .sidepub{
+  display: none;
+   }
+   .row2pic{
+    grid-column: 1/-1;
+   }
+   .row3pic{
+    grid-column: 1/-1;
+   }
+   .row3pub{
+    grid-column: 1/-1;
+   }
+   
+    footer{
+     grid-column: 1/-1;
+     height: 150px;
+    }
+
+    .list1 ul li,
+    .list2 ul li{
+        margin-bottom: 5px;
+    }
+
+}
+
+
+   
