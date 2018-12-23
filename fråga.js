@@ -2,16 +2,18 @@
     $(document).ready(function(){
     shown();
     $("#box").accordion({
-        collapsible: true
-    });
-   
+        collapsible: false
+        });
+          $(".ui-accordion-header").css("background","#1f1f1f") ;
+          $(".ui-accordion-header").css("color","#fff") ;
+          $(".ui-accordion-header.ui-state-active ").css("background","#1f1f1f") ;
+          
     
     })
 
     function shown(){
         $("#itoggle").click(function(){
             $(".ligne1").hide();
-            $(".header ul ").css("background-color", "#007FFF");
             $(".header ul li").show(hidden());
         })
     }

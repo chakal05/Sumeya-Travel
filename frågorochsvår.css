@@ -20,7 +20,7 @@ body{
 .top{
     grid-column: 1/-1;
     text-align: center;
-    color: #007FFF;
+    color: #1f1f1f;
   
 }
 .header{
@@ -43,12 +43,12 @@ body{
  
 }
 .header ul li a:hover {
-    background-color:rgb(144, 178, 212);
+    background-color:#1f1f1f;
     color: #fff;
  }
 .header ul li a{
     text-decoration: none;
-    color:#007FFF;
+    color:#1f1f1f;
     padding: 15px;
      font-size: 14px;
      height: 30px;
@@ -92,32 +92,34 @@ body{
     grid-column: 1/-1;
     position: absolute;
     top: 13%;
-    left: 40%;
-    color: #007FFF;
+    left: 45%;
+    color: #1f1f1f;
    
 }
 .ligne1 h2{
-    width: 150px;
+    width: 200px;
     height: 40px;
-    font-size: 19px;
+    font-size: 23px;
     padding: 10px;
    
 }
 .bigBox{
     grid-column: 1/-1;
-    margin-top: 40px;
-   max-height: 300px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 60px;
+    margin-bottom: 0;
+   height: auto;
     padding: 5px;
-    
+   
 }
 footer{
     grid-column: 1/-1;
-    position: absolute;
-    bottom: -9%;
-    background-color: #007FFF;
+    background-color: #1f1f1f;
     text-align: center;
     height: 70px;
-    width: 100%;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 .list1,
 .list2 {
@@ -165,38 +167,34 @@ footer{
     .header ul li a{
         color: #fff;
     }
+    
+.header ul li a:hover {
+    background-color:#fff;
+    color: #000000;
+ }
     .toggle{
         display: block;
         margin: 21px;
         font-size: 20px;
         background-color:#fff;
-        color: #007FFF;
+        color: #1f1f1f;
     }
     .ligne1{
         width: 100%;
         margin-left: 0%;
         margin-top: 7px;
-        background-color: #007FFF;
+        background-color: #1f1f1f;
         color: #fff;
         width: 150px;
         padding: 5px;
         
     }
 
-
-    .bigBox{
-        grid-column: 1/-1;
-    margin-top: 40px;
-   max-height: 300px;
-    padding: 5px;
+    .ligne1 h2{
+        font-size: 19px;
     }
-
-    footer{
-     width: 100%;
-     height: 70px;
-     position: absolute;
-     bottom: -38%;
-    }
+   
+   
 }
 
 /*Queries for mobile phone*/
@@ -224,24 +222,15 @@ footer{
     }
     .ligne1{
         width: 100%;
-        margin-left: 0%;
-        margin-top: 4px;
+     position: relative;
+     left: 33%;
         width: 150px;
     }
+   
         
-    .bigBox{
-        grid-column: 1/-1;
-        width: 100%;
-        margin-right: 0;
-
-    }
-  
- footer{
-     width: 100%;
-     height: 80px;
-    position: absolute;
-    bottom: -51%;
- }
+   footer{
+       height: 100px;
+   }
 
 
 }

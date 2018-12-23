@@ -223,11 +223,7 @@ footer{
     .header ul li{
         display: none;
     }
-    .toggle{
-        display: block;
-        margin: 20px;
-        font-size: 20px;
-    }
+   
     .firstpub{
       width: 100%;
     }

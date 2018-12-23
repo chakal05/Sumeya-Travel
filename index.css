@@ -1,0 +1,633 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+}
+body{
+
+}
+#container{
+    width: 100%;
+     display: grid;
+     grid-template-columns: repeat(3,minmax(200px,1fr));
+     grid-template-rows: minmax(50px,auto);
+     grid-gap: 0;
+}
+.top{
+    grid-column: 1/-1;
+    text-align: center;
+    height: 580px;
+}
+.header{
+   height: 100%;
+   width: 100%;
+   background-image: url('explore.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+  background-position:center 49%;
+   text-align: center;
+   
+}
+.header ul{
+    float: right;
+    list-style: none;
+    margin-right: 60px;
+}
+.header ul li{
+    display: inline-block;
+    margin-top: 35px;
+    font-weight: bold;
+    margin-right: 30px;
+    margin-left: 20px;
+    text-transform: uppercase;
+  
+}
+.header ul li a:hover {
+    background-color:#1F1F1F;
+    color: #fff;
+ }
+.header ul li a{
+    text-decoration: none;
+    color:#000000;
+    padding: 15px;
+     font-size: 14px;
+     height: 30px;
+     width: 150px;
+     border-radius: 3px;
+}
+.logo{
+    
+   position: absolute;
+   top: -2%;
+   left: 2px;
+   
+}
+.logo h1{
+   font-size: 53px;
+   text-transform: lowercase;
+   margin: 0;
+   font-family: 'Nova Mono', monospace;
+   letter-spacing: -9px;;
+}
+.logo h2{
+    position: absolute;
+    top: 51%;
+    right: 9%;
+    text-transform: uppercase;
+    font-size: 21px;
+}
+.logo p{
+    font-size: 12px;
+    position: relative;
+    left: 23%; 
+    font-weight: bold;
+}
+
+.toggle{
+    display: none;
+    float: right;
+}
+
+.pub{
+    position: absolute;
+    top:15%;
+    left:7%;
+    text-align: center;
+    width: 50%;
+    height: 0;
+   
+}
+.pub h1{
+    font-size: 63px;
+    color: #1f1f1f;
+    margin-bottom:3px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.pub p{
+    font-size: 41px;
+    color: #fff;
+    font-weight: bold;
+}
+.search{
+    width: 400px;
+    background-color: #1F1F1F;
+    color: #fff;
+    position: absolute;
+    right:2%;
+    top:17%;
+    text-align: left;
+    height: 427px;
+   
+}
+.form_group{
+   padding: 5px;
+   margin-bottom: 21px;
+}
+.formco{
+    width: 100%;
+    height: 50px;
+}
+.jahs{
+    width: 100%;
+}
+.checkin{
+padding: 5px;
+float: left;
+margin: 0;
+width: 50%;
+}
+
+.checkin input{
+    width: 100%;
+    height: 50px;
+    border-radius: 3px;
+}
+.checkout{
+    padding: 5px;
+    margin: 0;
+}
+.checkout input{
+    width: 50%;
+    height: 50px;
+    border-radius: 3px;
+}
+label{
+  display: block;
+  margin: 20px 0 0 0;
+}
+
+.adults{
+    padding: 5px;
+    float: left;
+    margin: 0;
+    width: 50%;
+}
+.adults select {
+    width: 100%;
+    height: 50px;
+    border-radius: 3px;
+}
+.children{
+    padding: 5px;
+    margin: 0;
+}
+.children select{
+    width: 50%;
+    height: 50px;
+    border-radius: 3px;
+}
+
+.btn{
+    margin-top: 27px;
+    margin-bottom: 3px;
+}
+.secondPage{
+    grid-column: 1/-1;
+    height: 700px;
+    background-image: url(resemal.jpg);
+    background-position:center 79%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 100%;
+}
+
+.secondPage h1{
+font-size: 125px;
+font-weight: bolder;
+margin-top: 30px;
+}
+.secondPage p{
+    width: 500px;
+    font-size: 19px;
+    font-weight: bold;
+    position: relative;
+    top: 17%;
+    left: 5%;
+    color: #000000;
+}
+.secondPage button{
+    position: relative;
+    left: 35%;
+    width: 150px;
+    height: 50px;
+    text-transform: uppercase;
+    font-size: 21px;
+    background-color: #000000;
+    font-weight: bold;
+   
+}
+.secondPage a{
+    text-decoration: none;
+    color: #fff;
+}
+.secondPage a:hover{
+    color: #000000;
+    padding: 10px;
+    background-color: #fff;
+    text-decoration: none;
+}
+.thirdPage{
+    grid-column: 1/-1;
+    width: 100%;
+    height: 600px;
+    background-image: url(jarand-lokeland-142660-unsplash.jpg);
+    background-position: center 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: relative;
+}
+.thirdPage h1{
+    font-weight: bolder;
+    margin: 20px;
+    font-size: 51px;
+    text-transform: uppercase;
+}
+.thirdPage h2{
+    font-weight: bolder;
+    font-size: 51px;
+}
+.tata{
+    margin: 10px;
+    float: left;
+    border-right: 2px solid;
+    text-align: center;
+    padding-right: 60px;
+    font-size: 21px;
+    height: 100px;
+    font-weight: bolder;
+}
+.lala{
+    margin: 10px;
+    font-size: 21px;
+    text-align: center;
+    font-weight: bolder;
+}
+.thirdPage button{
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: bold;
+    background-color: rgb(250, 233, 224);
+    color: #000000;
+    width: 140px;
+    height: 50px;
+    position: absolute;
+    top: 84%;
+    right: 46%;
+}
+.thirdPage a{
+    text-decoration: none;
+    color: #000000;
+}
+.thirdPage a:hover{
+    text-decoration: none;
+    color:rgb(250, 233, 224);
+    background-color: #000;
+   padding: 15px;
+}
+.ui-datepicker {
+    width: 300px;
+    height: auto;
+    margin: 0 auto 0;
+    font: 12pt Arial, sans-serif;
+  
+}
+
+    .ui-datepicker table {
+        width: 100%;
+    }
+
+.ui-datepicker-header {
+    background: #1f1f1f;
+    color: #ffffff;
+    font-family:'Times New Roman';
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    border-color: #111;
+}
+
+.ui-datepicker-title {
+    text-align: center;
+    font-size: 15px;
+
+}
+
+.ui-datepicker-prev {
+    float: left;
+    cursor: pointer;
+    background-position: center -30px;
+}
+
+.ui-datepicker-next {
+    float: right;
+    cursor: pointer;
+    background-position: center 0px;
+}
+
+.ui-datepicker thead {
+    background-color: #f7f7f7;
+
+    /*border-bottom: 1px solid #bbb;*/
+}
+
+.ui-datepicker th {
+    background-color:#808080;
+    text-transform: uppercase;
+    font-size: 8pt;
+    color: #666666;
+}
+
+.ui-datepicker tbody td {
+    padding: 0;
+    /*border-right: 1px solid #808080;*/
+}
+
+    .ui-datepicker tbody td:last-child {
+        border-right: 0px;
+    }
+
+.ui-datepicker tbody tr {
+    border-bottom: 1px solid #bbb;
+}
+
+    .ui-datepicker tbody tr:last-child {
+        border-bottom: 0px;
+    }
+
+.ui-datepicker a {
+    text-decoration: none;
+}
+
+.ui-datepicker td span, .ui-datepicker td a {
+    display: inline-block;
+    /*font-weight: bold;*/
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #ffffff;
+}
+
+.ui-datepicker-calendar .ui-state-default {
+      background: linear-gradient(#999999, #737373);
+      color:#ffffff;
+      height:40px;
+      width:40px;
+
+}
+
+.ui-datepicker-calendar .ui-state-hover {
+    background: #1f1f1f;
+    color: #FFFFFF;
+}
+
+.ui-datepicker-calendar .ui-state-active {
+    background: #33adff;
+    -webkit-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .1);
+    -moz-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .1);
+    box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .1);
+    color: #e0e0e0;
+    text-shadow: 0px 1px 0px #4d7a85;
+    border: 1px solid #55838f;
+    position: relative;
+    margin: -1px;
+}
+
+.ui-datepicker-unselectable .ui-state-default {
+    background: #D6E4BE;
+    color: #000;
+}
+
+footer{
+    background-color: #1F1F1F;
+   grid-column: 1/-1;
+    text-align: center;
+    height: auto;
+}
+.list1,
+.list2 {
+    margin-top: 20px;
+   list-style: none;
+}
+.list1 li,
+.list2 li{
+    display: inline-block;
+    margin-right: 30px;
+    color: #fff;
+}
+
+
+
+/*Queries for tablets*/
+@media(max-width:959px){
+    #container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(80px , 1fr));
+        grid-template-rows:minmax(50px, auto);
+    }
+    .top{
+        width: 100%;
+        height: 700px;
+    }
+   .header{
+    width: 100%;
+   }
+    .header ul{
+        width: 100%;
+        background-color: #1F1F1F;
+       margin-top: 20px;
+       margin-right: 0;
+       height: 460px;
+       display: none;
+      
+    }
+    .header ul li{
+     display: none; 
+     text-align:center;
+     font-size: 13px;
+        }
+        .header ul li a {
+            color: #fff;
+        }
+
+    .toggle{
+        display: block;
+        margin-right: 15px;
+        margin-top: 7px;
+        font-size: 23px;
+        padding-top: 3px; 
+    }
+    .pub{
+       
+        position: absolute;
+        top:21%;
+        left:0%;
+        text-align: center;     
+        margin-right: 10px;
+        width: 50%;
+    }
+    .pub h1{
+        font-size: 43px;
+        margin-left: 0;
+    }
+    .pub p{
+        font-size: 37px;
+      padding: 20px;
+        width: 100%;
+        margin-left: 0;
+        
+    }
+    .pub button{
+        margin-top: 30px;
+        width: 120px;
+        padding: 7px;
+        margin-right: 22px;
+    }
+    .search{
+        width: 50%;
+    }
+    .secondPage{
+        width: 100%;
+        
+    }
+    .secondPage p{
+        position: relative;
+        top: 19%;
+        left: 5%;
+        font-size: 17px;
+        width: 50%;
+       
+    }
+    .secondPage button{
+        position: relative;
+        top: 195%;
+        right: 9%;
+    }
+    .thirdPage{
+        width: 100%;
+        text-align: center;
+        color: rgb(253, 253, 253);
+        position: relative;
+    }
+    .thirdPage h1{
+        color: #000;
+    }
+    .thirdPage button{
+        position: absolute;
+        bottom: 5%;
+        right: 43%;
+    }
+    .tata{
+        padding: 5px;
+    }
+    .lala{
+        padding: 5px;
+    }
+    footer{
+      width: 100%;
+      
+    }
+    
+    .list1 ul li,
+    .list2 ul li{
+        margin-bottom: 5px;
+    }
+           
+}
+
+/*Queries for mobile*/
+@media (max-width: 640px){
+#container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(50px , 1fr));
+    grid-template-rows:minmax(50px, auto);
+}
+
+.top{
+    width: 100%;
+    height: 725px;
+}
+.header ul{
+    margin-top: 40px;
+}
+.pub{
+    width: 100%;
+    position: absolute;
+    top:15%;
+}
+.toggle{
+    margin-top: 15px;
+}
+.pub h1{
+    font-size: 33px;
+  
+}
+.pub p{
+    font-size: 17px;  
+    color: #1F1F1F; 
+}
+.search{
+    width: 100%;
+    position: absolute;
+    top: 41.7%;
+    right: 0;
+}
+.secondPage{
+    width: 100%; 
+    height: 650px;
+    position: relative;
+}
+.secondPage h1{
+    font-size: 90px;
+    margin-top: 30px;
+}
+.secondPage p{
+    width: 100%;
+    left: 0;
+    top: 11%;
+    padding: 5px;
+    color:#fff;
+    background-color: #0a0303;
+}
+.secondPage button{
+    position: absolute;
+    top: 85%;
+    left: 30%;
+    
+}
+.thirdPage{
+    width: 100%;
+    text-align: center;
+    height: 780px;
+   grid-column: 1/-1;
+}
+.tata{
+    float: none;
+    border-right: none;
+    padding: 0;
+    margin: 0;
+}
+.thirdPage button{
+    position: relative;
+    bottom: 7%;
+    right: 0;
+}
+footer{
+    grid-column: 1/-1;
+    width: 100%; 
+}
+.list1 ul li,
+    .list2 ul li{
+        margin-left: 10%;
+    }
+
+
+}
+   
