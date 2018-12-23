@@ -20,7 +20,7 @@ body{
 .top{
     grid-column: 1/-1;
     text-align: center;
-    color: #1F1F1F;
+    color: #1f1f1f;
   
 }
 .header{
@@ -48,8 +48,7 @@ body{
  }
 .header ul li a{
     text-decoration: none;
-   
-    color: #1F1F1F;
+    color:#1f1f1f;
     padding: 15px;
      font-size: 14px;
      height: 30px;
@@ -94,15 +93,15 @@ body{
     position: absolute;
     top: 13%;
     left: 45%;
-    color: #1F1F1F;
- 
+    color: #1f1f1f;
+   
 }
 .ligne1 h2{
-    width: 150px;
+    width: 200px;
     height: 40px;
     font-size: 23px;
     padding: 10px;
-    margin-bottom: 30px;
+   
 }
 .bigBox{
     grid-column: 1/-1;
@@ -111,9 +110,9 @@ body{
     margin-top: 60px;
     margin-bottom: 0;
    height: auto;
-    padding: 5px;  
+    padding: 5px;
+   
 }
-
 footer{
     grid-column: 1/-1;
     background-color: #1f1f1f;
@@ -133,6 +132,7 @@ footer{
     margin-right: 30px;
     color: #fff;
 }
+
 /*Queries for tablets*/
 @media only screen and (max-width: 960px){
     body{
@@ -140,7 +140,7 @@ footer{
     }
     #container{
         width: 100%;
-        grid-template-columns: repeat(6,minmax(80px,1fr));
+        grid-template-columns: repeat(6,minmax(100px,1fr));
      grid-template-rows: minmax(50px,auto);
      grid-gap: 5px;
     }
@@ -167,6 +167,11 @@ footer{
     .header ul li a{
         color: #fff;
     }
+    
+.header ul li a:hover {
+    background-color:#fff;
+    color: #000000;
+ }
     .toggle{
         display: block;
         margin: 21px;
@@ -175,33 +180,31 @@ footer{
         color: #1f1f1f;
     }
     .ligne1{
-        background-color: #1F1F1F;
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 7px;
+        background-color: #1f1f1f;
         color: #fff;
-        height: 50px;
-        padding-left: 10px;
-        margin-bottom: 0;
-        margin-top: 10px;
-    }
-    .ligne1 h2{
-        margin: 0;
-    }
-    .bigBox{
-        grid-column: 1/-1;
+        width: 150px;
+        padding: 5px;
+        
     }
 
-    footer{
-     height: 100px;
+    .ligne1 h2{
+        font-size: 19px;
     }
+   
+   
 }
 
-/*Queries for mobile phones*/
-@media only screen and (max-width: 640px){
+/*Queries for mobile phone*/
+@media only screen and (max-width:660px){
     body{
         overflow-x: hidden;
     }
     #container{
         width: 100%;
-        grid-template-columns: repeat(6,minmax(50px,1fr));
+        grid-template-columns: repeat(6,minmax(10px,1fr));
      grid-template-rows: minmax(50px,auto);
      grid-gap: 5px;
     }
@@ -209,7 +212,6 @@ footer{
         grid-column: 1/-1;
         width: 100%;
     }
-    
     .header ul li{
         display: none;
     }
@@ -220,10 +222,16 @@ footer{
     }
     .ligne1{
         width: 100%;
-        position: relative;
-        left: 33%;     
+     position: relative;
+     left: 33%;
         width: 150px;
     }
+   
         
+   footer{
+       height: 100px;
+   }
+
 
 }
+

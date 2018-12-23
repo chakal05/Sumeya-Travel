@@ -12,7 +12,7 @@ body{
 #container{
     width: 100%;
      display: grid;
-     grid-template-columns: repeat(3,minmax(200px,1fr));
+     grid-template-columns: repeat(3,minmax(100px,1fr));
      grid-template-rows: minmax(50px,auto);
      grid-gap: 0;
 }
@@ -424,7 +424,7 @@ footer{
 
 
 /*Queries for tablets*/
-@media(max-width:959px){
+@media only screen and (max-width:959px){
     #container{
         width: 100%;
         display: grid;
@@ -542,7 +542,7 @@ footer{
 }
 
 /*Queries for mobile*/
-@media (max-width: 640px){
+@media only screen and (max-width: 640px){
 #container{
     width: 100%;
     display: grid;
