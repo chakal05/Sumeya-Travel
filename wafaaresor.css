@@ -182,7 +182,7 @@ background-repeat: no-repeat;
         margin-top: 5px;
     }
 /*Queries for tablets*/
-@media screen and (max-width:960px){
+@media only screen and (max-width:960px){
         #container{
             width: 100%;
              display: grid;
@@ -280,7 +280,7 @@ background-repeat: no-repeat;
     
 /*Queries for mobile phones*/
 
-@media screen and (max-width: 640px){
+@media only screen and (max-width: 640px){
     #container{
         width: 100%;
         
