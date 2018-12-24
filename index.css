@@ -523,7 +523,7 @@ footer{
 }
 
 /*Queries for mobile*/
-@media only screen and (max-width: 640px){
+@media only screen and (max-width:640px){
 #bigBox{
     width: 100%;
     display: grid;
