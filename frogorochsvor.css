@@ -134,7 +134,7 @@ footer{
 }
 
 /*Queries for tablets*/
-@media only screen and (max-width: 960px){
+@media (max-width: 960px){
     body{
         overflow-x: hidden;
     }
@@ -198,7 +198,7 @@ footer{
 }
 
 /*Queries for mobile phone*/
-@media only screen and (max-width:660px){
+@media (max-width:660px){
     body{
         overflow-x: hidden;
     }
