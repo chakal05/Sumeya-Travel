@@ -423,7 +423,7 @@ footer{
 
 
 /*Queries for tablets*/
-@media screen and (max-width:959px){
+@media only screen and (max-width:959px){
     #container{
         width: 100%;
         display: grid;
@@ -541,7 +541,7 @@ footer{
 }
 
 /*Queries for mobile*/
-@media screen and (max-width: 640px){
+@media only screen and (max-width: 640px){
 #container{
     width: 100%;
     display: grid;
