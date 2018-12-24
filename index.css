@@ -40,8 +40,8 @@ background-repeat: no-repeat;
     display: inline-block;
     margin-top: 35px;
     font-weight: bold;
-    margin-right: 30px;
-    margin-left: 20px;
+    margin-right: 20px;
+    margin-left: 10px;
     text-transform: uppercase;
   
 }
@@ -93,27 +93,21 @@ background-repeat: no-repeat;
 
 .pub{
     position: absolute;
-    top:15%;
-    left:7%;
+    top: 25%;
     text-align: center;
-    width: 50%;
+    width: 47%;
     height: 0;
    
 }
 .pub h1{
-    font-size: 63px;
-    color: #1f1f1f;
+    font-size: 53px;
+    color: #fff;
     margin-bottom:3px;
     text-transform: uppercase;
     font-weight: bold;
 }
-.pub p{
-    font-size: 41px;
-    color: #fff;
-    font-weight: bold;
-}
 .search{
-    width: 400px;
+    width: 50%;
     background-color: #1F1F1F;
     color: #fff;
     position: absolute;
@@ -419,10 +413,8 @@ footer{
     color: #fff;
 }
 
-
-
 /*Queries for tablets*/
-@media  (max-width:959px){
+@media screen and (max-width:1020px){
     #container{
         width: 100%;
         display: grid;
@@ -435,6 +427,7 @@ footer{
     }
    .header{
     width: 100%;
+    background-position: center 67%;
    }
     .header ul{
         width: 100%;
@@ -464,31 +457,20 @@ footer{
     .pub{
        
         position: absolute;
-        top:21%;
+        top:17%;
         left:0%;
         text-align: center;     
-        margin-right: 10px;
-        width: 50%;
+        width: 100%;
     }
     .pub h1{
-        font-size: 43px;
-        margin-left: 0;
-    }
-    .pub p{
         font-size: 37px;
-      padding: 20px;
-        width: 100%;
         margin-left: 0;
-        
-    }
-    .pub button{
-        margin-top: 30px;
-        width: 120px;
-        padding: 7px;
-        margin-right: 22px;
+       
     }
     .search{
-        width: 50%;
+        width: 100%;
+        right: 0;
+        top: 41%;
     }
     .secondPage{
         width: 100%;
@@ -540,7 +522,7 @@ footer{
 }
 
 /*Queries for mobile*/
-@media (max-width: 640px){
+@media screen and (max-width: 640px){
 #container{
     width: 100%;
     display: grid;
@@ -567,14 +549,10 @@ footer{
     font-size: 33px;
   
 }
-.pub p{
-    font-size: 17px;  
-    color: #1F1F1F; 
-}
 .search{
     width: 100%;
     position: absolute;
-    top: 41.7%;
+    top: 45%;
     right: 0;
 }
 .secondPage{
