@@ -23,6 +23,7 @@ function hidden(){
         $(".header ul").hide(shown());
         $(".header ul li").hide(shown());
         $(".pub").show();
+        $("#search").show();
     })
 }
 
@@ -31,5 +32,6 @@ function shown(){
         $(".header ul").show(hidden());
         $(".header ul li").show(hidden());
         $(".pub").hide();
+        $("#search").hide();
     })
 }
