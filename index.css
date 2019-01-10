@@ -6,8 +6,10 @@
 img{
     width: 100%;
 }
-body{
-overflow-x: hidden;
+html,body{
+    width: 100%;
+    height: 100%;
+ overflow-x: hidden;
 }
 #bigBox{
     width: 100%;
@@ -21,7 +23,7 @@ overflow-x: hidden;
     text-align: center;
     height: 580px;
     width: 100%;
-   
+   position: relative;
 }
 .header{
    height: 100%;
@@ -419,7 +421,7 @@ footer{
     #bigBox{
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(3,minmax(80px,1fr));
+        grid-template-columns: repeat(3,minmax(100px,1fr));
         grid-template-rows:minmax(50px, auto);
     }
     .top{
@@ -464,13 +466,13 @@ footer{
         
     }
     .pub h1{
-        font-size: 37px;
+        font-size: 39px;
         margin-left: 0;
     }
     #search{
         width: 100%;
         right: 0;
-        top: 41%;
+        top: 33%;
     }
     .secondPage{
         width: 100%;
@@ -492,11 +494,12 @@ footer{
     .thirdPage{
         width: 100%;
         text-align: center;
-        color: rgb(253, 253, 253);
+        color: #fff;
         position: relative;
     }
     .thirdPage h1{
-        color: #000;
+       
+       color:  #000;
     }
     .thirdPage button{
         position: absolute;
@@ -504,7 +507,7 @@ footer{
         right: 43%;
     }
     .tata{
-        padding: 5px;
+       padding: 5px;
     }
     .lala{
         padding: 5px;
@@ -546,13 +549,13 @@ footer{
     margin-top: 15px;
 }
 .pub h1{
-    font-size: 33px;
+    font-size: 25px;
   
 }
 #search{
     width: 100%;
     position: absolute;
-    top: 45%;
+    top: 33%;
     right: 0;
 }
 .secondPage{
@@ -567,7 +570,7 @@ footer{
 .secondPage p{
     width: 100%;
     left: 0;
-    top: 19%;
+    top: 13%;
     padding: 5px;
     color:#fff;
     background-color: #0a0303;
@@ -575,7 +578,7 @@ footer{
 .secondPage button{
     position: absolute;
     top: 83%;
-    left: 34.5%;
+    left: 29%;
     
 }
 .thirdPage{
@@ -583,16 +586,21 @@ footer{
     text-align: center;
     height: 780px;
    grid-column: 1/-1;
+
+}
+.thirdPage h1{
+    font-size: 27px;
 }
 .tata{
     float: none;
     border-right: none;
     padding: 0;
-    margin: 0;
+    margin-bottom: 5px;
+    font-size: 17px;
 }
 .thirdPage button{
     position: relative;
-    bottom: 7%;
+    bottom: 3%;
     right: 0;
 }
 footer{
