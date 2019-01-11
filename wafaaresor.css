@@ -187,7 +187,7 @@ background-repeat: no-repeat;
         margin-top: 5px;
     }
 /*Queries for tablets*/
-@media all and (max-width: 959px){
+@media screen and (max-width: 959px){
         #bigBox{
             width: 100%;
              display: grid;
@@ -285,10 +285,13 @@ background-repeat: no-repeat;
     
 /*Queries for mobile phones*/
 
-@media all and (max-width: 640px){
+@media screen and (max-width: 640px){
     #bigBox{
         width: 100%;
-        
+        display: grid;
+        grid-template-columns: repeat(3,minmax(60px,1fr));
+        grid-template-rows: minmax(50px,auto);
+        grid-gap: 0;
     }
     .top{
         grid-column: 1/-1;

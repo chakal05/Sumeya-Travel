@@ -128,10 +128,11 @@ footer{
 }
 
 /*Queries for tablets*/
-@media all and (max-width: 960px){
+@media screen and (max-width: 960px){
    
     #bigBox{
         width: 100%;
+        display: grid;
         grid-template-columns: repeat(6,minmax(80px,1fr));
      grid-template-rows: minmax(50px,auto);
      grid-gap: 5px;
@@ -188,10 +189,11 @@ footer{
 }
 
 /*Queries for mobile phone*/
-@media all and (max-width:660px){
+@media screen and (max-width: 640px){
     
     #bigBox{
         width: 100%;
+        display: grid;
         grid-template-columns: repeat(6,minmax(60px,1fr));
      grid-template-rows: minmax(50px,auto);
      grid-gap: 5px;
