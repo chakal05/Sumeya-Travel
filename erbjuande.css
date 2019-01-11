@@ -14,7 +14,6 @@ html,body{
  background-color: rgb(231, 229, 229);
 }
 #bigBox{
-    
      display: grid;
      grid-template-columns: repeat(6,minmax(100px,1fr));
      grid-template-rows: minmax(50px,auto);
@@ -210,6 +209,7 @@ footer{
         width: 100%;
     }
 }
+
 /*Queries for mobile phone*/
 @media screen and (max-width: 640px){
     #bigBox{

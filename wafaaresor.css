@@ -187,7 +187,7 @@ background-repeat: no-repeat;
         margin-top: 5px;
     }
 /*Queries for tablets*/
-@media screen and (max-width:960px){
+@media screen and (max-width: 959px){
         #bigBox{
             width: 100%;
              display: grid;
