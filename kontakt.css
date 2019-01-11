@@ -12,7 +12,7 @@ html,body{
  overflow-x: hidden;
  background-color: rgb(231, 229, 229);
 }
-#container{
+#bigBox{
 
     display: grid;
      grid-template-columns: repeat(6,minmax(100px,1fr));
@@ -146,10 +146,8 @@ footer{
 
 /*Queries for tablets*/
 @media screen and (max-width:960px){
-    body{
-        overflow-x: hidden;
-    }
-    #container{
+   
+    #bigBox{
         width: 100%;
         grid-template-columns: repeat(6,minmax(100px,1fr));
      grid-template-rows: minmax(50px,auto);
@@ -215,10 +213,8 @@ footer{
 
 /*Queries for mobile*/
 @media screen and (max-width:660px){
-    body{
-        overflow-x: hidden;
-    }
-    #container{
+   
+    #bigBox{
         width: 100%;
         grid-template-columns: repeat(6,minmax(50px,1fr));
      grid-template-rows: minmax(50px,auto);

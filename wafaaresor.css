@@ -10,9 +10,9 @@ img{
 html,body{
     width: 100%;
     height: 100%;
- overflow-x: hidden;
+ 
 }
-#container{
+#bigBox{
     width: 100%;
      display: grid;
      grid-template-columns: repeat(4,minmax(200px,1fr));
@@ -188,7 +188,7 @@ background-repeat: no-repeat;
     }
 /*Queries for tablets*/
 @media screen and (max-width:960px){
-        #container{
+        #bigBox{
             width: 100%;
              display: grid;
              grid-template-columns: repeat(3,minmax(100px,1fr));
@@ -286,7 +286,7 @@ background-repeat: no-repeat;
 /*Queries for mobile phones*/
 
 @media screen and (max-width: 640px){
-    #container{
+    #bigBox{
         width: 100%;
         
     }
