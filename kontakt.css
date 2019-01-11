@@ -145,7 +145,7 @@ footer{
 
 
 /*Queries for tablets*/
-@media screen and (max-width: 959px){
+@media only screen and (max-width: 959px){
    
     #bigBox{
         width: 100%;
@@ -213,7 +213,7 @@ footer{
 }
 
 /*Queries for mobile*/
-@media screen and (max-width: 640px){
+@media only screen and (max-width: 640px){
    
     #bigBox{
         width: 100%;

@@ -417,11 +417,11 @@ footer{
 }
 
 /*Queries for tablets*/
-@media screen and (max-width: 959px){
+@media only screen and (max-width: 959px) {
     #bigBox{
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(3,minmax(100px,1fr));
+        grid-template-columns: repeat(3,minmax(100px, 1fr));
         grid-template-rows:minmax(50px, auto);
     }
     .top{
@@ -525,7 +525,7 @@ footer{
 }
 
 /*Queries for mobile*/
-@media screen and (max-width: 640px){
+@media only screen and (max-width: 640px){
 #bigBox{
     width: 100%;
     display: grid;
