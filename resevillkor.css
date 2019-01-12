@@ -133,7 +133,7 @@ footer{
     #bigBox{
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(6,minmax(80px,1fr));
+        grid-template-columns: repeat(6, minmax(80px, 1fr));
      grid-template-rows: minmax(50px,auto);
      grid-gap: 5px;
     }
