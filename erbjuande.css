@@ -21,7 +21,30 @@ html,body{
 }
 .top{
     grid-column: 1/-1; 
+    position: relative;
 }
+
+.logo{
+    
+    position: absolute;
+    top: -11px;
+    left: 9px;
+    
+ }
+ .logo h1{
+    font-size: 43px;
+    text-transform: lowercase;
+    margin: 0;
+    font-family: 'Nova Mono', monospace;
+    letter-spacing: -9px;;
+ }
+ .logo h2{
+     position: absolute;
+     top: 75%;
+     right: 29%;
+     text-transform: uppercase;
+     font-size: 17px;
+ }
    .header{
        text-align: center;
    }
@@ -53,31 +76,6 @@ html,body{
          border-radius: 3px;
     }
 
-   
-.logo{
-    
-    position: absolute;
-    top: -11px;
-    left: 9px;
-    
- }
- .logo h1{
-    font-size: 43px;
-    text-transform: lowercase;
-    margin: 0;
-    font-family: 'Nova Mono', monospace;
-    letter-spacing: -9px;;
- }
- .logo h2{
-     position: absolute;
-     top: 75%;
-     right: 29%;
-     text-transform: uppercase;
-     font-size: 17px;
- }
- 
-    
-   
     .toggle{
         display: none;
         float: right;
@@ -159,12 +157,12 @@ footer{
     #bigBox{
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(6,minmax(80px,1fr));
+        grid-template-columns: repeat(6,minmax(100px,1fr));
      grid-template-rows: minmax(50px,auto);
      grid-gap: 5px;
     }
     .top{
-        grid-column: 1/-1;
+       width: 100%;
     }
     .header ul{
         width: 100%;
@@ -192,14 +190,14 @@ footer{
       width: 100%;
     }
     .box {
-        grid-column: 1/-1;
-        width: 100%;
+       grid-column: 1/-1;
+       width: 100%;
     }
     .box img{
         width: 100%;
     }
     footer{
-        grid-column: 1/-1;
+       
         width: 100%;
     }
 }
@@ -214,7 +212,7 @@ footer{
      grid-gap: 5px;
     }
     .top{
-        grid-column: 1/-1;
+       
         width: 100%;
     }
     
@@ -226,7 +224,6 @@ footer{
       width: 100%;
     }
     .box {
-        grid-column: 1/-1;
         width: 100%;
     }
    footer{
