@@ -409,12 +409,15 @@ footer{
 }
 
 /*Queries for tablets*/
+
 @media only screen and (max-width: 959px) {
+
     #bigBox{
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(3,minmax(100px, 1fr));
+        grid-template-columns: repeat(3, minmax(100px, 1fr));
         grid-template-rows:minmax(50px, auto);
+
     }
     .top{
         width: 100%;
@@ -526,6 +529,7 @@ footer{
 
 /*Queries for mobile*/
 @media only screen and (max-width: 640px){
+
 #bigBox{
     width: 100%;
     display: grid;
@@ -547,6 +551,12 @@ footer{
 }
 .toggle{
     margin-top: 15px;
+}
+
+
+.pub h1{
+    line-height: 30px;
+    color: #000000;
 }
 .pub h1{
     font-size: 29px;
@@ -573,13 +583,12 @@ footer{
     top: 13%;
     padding: 5px;
     color:#fff;
-    background-color: #0a0303;
+    font-size: 21px;
 }
 .secondPage button{
     position: absolute;
-    top: 83%;
+    top: 87%;
     left: 29%;
-    
 }
 .thirdPage{
     width: 100%;
@@ -595,12 +604,12 @@ footer{
     float: none;
     border-right: none;
     padding: 0;
-    margin-bottom: 5px;
+    margin-bottom: 0;
     font-size: 17px;
 }
 .thirdPage button{
     position: relative;
-    bottom: 3%;
+    bottom: -9%;
     right: 0;
 }
 footer{
