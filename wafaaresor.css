@@ -10,6 +10,7 @@ img{
 html,body{
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
 }
 #bigBox{
     width: 100%;
@@ -298,17 +299,22 @@ background-repeat: no-repeat;
     }
     .header ul{
         display: none;
+        margin-left: 3% ;
+        margin-top: 5%;
+
+        padding-right: 10%;
     }
     .header ul li{
         display: none;  
-           }
+        width: 100%;
+       
+    }
     .header ul li a{
         color: #fff;
     }
     .toggle{
         display: block;
-        margin-right: 15px;
-        margin-top: 23px;
+        margin: 21px; 
         font-size: 23px;
         padding-top: 3px;
     }

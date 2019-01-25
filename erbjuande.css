@@ -25,11 +25,9 @@ html,body{
 }
 
 .logo{
-    
     position: absolute;
-    top: -11px;
+    top: -4px;
     left: 9px;
-    
  }
  .logo h1{
     font-size: 43px;
@@ -212,12 +210,20 @@ footer{
      grid-gap: 5px;
     }
     .top{
-       
         width: 100%;
     }
     
     .header ul li{
         display: none;
+    }
+
+    .logo{
+        top: 3%;
+    }
+
+    .toggle{
+    font-size: 20px;
+    margin: 7%;
     }
    
     .firstpub{
