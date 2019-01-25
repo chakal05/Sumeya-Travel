@@ -1,0 +1,6 @@
+.header {
+   background: url(images/paysage.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+     background-position:center ;
+}
