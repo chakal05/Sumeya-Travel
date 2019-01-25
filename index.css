@@ -574,8 +574,8 @@ footer{
 }
 .secondPage button{
     position: absolute;
-    top: 87%;
-    left: 29%;
+    top: 90%;
+    left: 27%;
     margin-top: 3%;
 }
 .thirdPage{
@@ -588,20 +588,20 @@ footer{
 .thirdPage h1{
     font-size: 30px;
     margin-top: 15%;
-    margin-bottom: 3%;
+   
 }
 .tata{
     float: none;
     border-right: none;
     padding: 0;
-    margin-bottom: 0;
+   margin-top: -3%;
     font-size: 17px;
 }
 .thirdPage button{
     margin-top: 3%;
     position: absolute;
     top: 85%;
-    left: 32.5%;
+    left: 29.5%;
 }
 footer{
     width: 100%; 
