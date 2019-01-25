@@ -10,7 +10,6 @@ img{
 html,body{
     width: 100%;
     height: 100%;
- overflow-x: hidden;
 }
 #bigBox{
     width: 100%;
@@ -61,11 +60,10 @@ background-repeat: no-repeat;
      border-radius: 3px;
 }
 .logo{
-    
    position: absolute;
    top: -10px;
    left: 9px;
-   
+   color: #fff;
 }
 .logo h1{
    font-size: 43px;
@@ -179,6 +177,7 @@ background-repeat: no-repeat;
         margin-top: 5px;
     }
 /*Queries for tablets*/
+
 @media only screen and (max-width: 959px) and (min-width: 641px) {
         #bigBox{
             width: 100%;
@@ -217,6 +216,11 @@ background-repeat: no-repeat;
             font-size: 20px;    
         }
 
+        .logo{
+            position: absolute;
+            top: 0.7%;
+            left: 9px;
+         }
         .presentation{
             position: absolute;
             top: 20%;
@@ -277,7 +281,7 @@ background-repeat: no-repeat;
     
 /*Queries for mobile phones*/
 
-@media only screen and (max-width: 640px) and (min-width: 321px) {
+@media only screen and (max-width: 640px) and (min-width: 0px) {
     #bigBox{
         width: 100%;
         display: grid;
@@ -307,12 +311,13 @@ background-repeat: no-repeat;
         margin-top: 23px;
         font-size: 23px;
         padding-top: 3px;
-        
-    }
-    .logo{
-        color: #fff;
     }
 
+    .logo{
+        position: absolute;
+        top: 0.7%;
+        left: 9px;
+     }
     .presentation{
         position: absolute;
         top: 15%;
@@ -346,16 +351,18 @@ background-repeat: no-repeat;
         font-size: 21px;
     }
    .sidepub{
-  display: none;
+    grid-column: 1/-1;
+    margin-top: -25px;
    }
-   .row2pic{
-   width: 100%;
+   .row2pic {
+   grid-column: 1/-1;
    }
    .row3pic{
-    width: 100%;
+    grid-column: 1/-1;
+   
    }
    .row3pub{
-    width: 100%;
+   display: none; 
    }
    
     footer{
