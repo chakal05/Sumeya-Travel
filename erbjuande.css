@@ -7,11 +7,10 @@ img{
     width: 100%;
 }
 
-html,body{
+html, body{
     width: 100%;
     height: 100%;
- overflow-x: hidden;
- background-color: rgb(231, 229, 229);
+    background-color: rgb(231, 229, 229);
 }
 #bigBox{
      display: grid;
@@ -83,7 +82,7 @@ html,body{
         grid-column: 1/-1;
         margin-top: 5px;
         padding: 30px;
-        font-size: 17px;
+        font-size: 13px;
         text-align: center;
     }
     
@@ -205,8 +204,8 @@ footer{
     #bigBox{
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(6,minmax(60px,1fr));
-     grid-template-rows: minmax(50px,auto);
+        grid-template-columns: repeat(6,minmax(60px, 1fr));
+     grid-template-rows: minmax(50px, auto);
      grid-gap: 5px;
     }
     .top{
@@ -228,6 +227,7 @@ footer{
    
     .firstpub{
       width: 100%;
+      padding: 0;
     }
     .box {
         width: 100%;
