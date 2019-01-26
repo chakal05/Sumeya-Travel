@@ -10,6 +10,7 @@ img{
 html, body{
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
     background-color: rgb(231, 229, 229);
 }
 #bigBox{
@@ -82,7 +83,7 @@ html, body{
         grid-column: 1/-1;
         margin-top: 5px;
         padding: 30px;
-        font-size: 13px;
+        font-size: 19px;
         text-align: center;
     }
     
@@ -124,7 +125,8 @@ html, body{
       top: 50%;
       transform: translateY(-50%);
       text-align: center;
-      padding: 15px;
+      padding: 10px;
+      padding-left: 13px;
       color: #fff;
   }
   .box .details .content h2{
@@ -194,13 +196,12 @@ footer{
         width: 100%;
     }
     footer{
-       
         width: 100%;
     }
 }
 
 /*Queries for mobile phone*/
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 640px)  {
     #bigBox{
         width: 100%;
         display: grid;
@@ -227,10 +228,14 @@ footer{
    
     .firstpub{
       width: 100%;
-      padding: 0;
+      padding: 20px;
+      font-size: 15px;
     }
     .box {
         width: 100%;
+    }
+    .box .details .content{
+        padding: 20px;
     }
    footer{
        width: 100%;
@@ -240,4 +245,38 @@ footer{
        margin: 5px;
    }
 
+}
+
+@media only screen and (max-width: 320px) {
+    #bigBox {
+        width: 100%;
+    }
+    
+    .top{
+        width: 100%;
+    }
+    
+    .toggle{
+        margin-right: 19%;
+        }
+    
+    .firstpub{
+         width: 100%;
+         padding: 40px;
+         margin-left: -30px;
+         font-size: 13px;
+    }
+    
+    .box {
+        width: 100%;
+    }
+    .box .details{
+        width: 100%;
+        margin-left:-10px;
+        position: absolute;
+        left: -5%;
+    }
+    .box .details .content{
+        padding: 13%;
+    }
 }
