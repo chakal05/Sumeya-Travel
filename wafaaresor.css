@@ -10,7 +10,6 @@ img{
 html,body{
     width: 100%;
     height: 100%;
-    overflow-x: hidden;
 }
 #bigBox{
     width: 100%;
@@ -64,7 +63,6 @@ background-repeat: no-repeat;
    position: absolute;
    top: -10px;
    left: 9px;
-   color: #fff;
 }
 .logo h1{
    font-size: 43px;
@@ -179,7 +177,7 @@ background-repeat: no-repeat;
     }
 /*Queries for tablets*/
 
-@media only screen and (max-width: 959px) and (min-width: 641px) {
+@media only screen and (max-width: 959px) {
         #bigBox{
             width: 100%;
              display: grid;
@@ -195,7 +193,6 @@ background-repeat: no-repeat;
         }
         .header ul{
             width: 100%;
-            background-color: #000000;
            margin-top: 30px;
            margin-right: 0;
            height: 260px;
@@ -221,6 +218,7 @@ background-repeat: no-repeat;
             position: absolute;
             top: 0.7%;
             left: 9px;
+            color: #fff;
          }
         .presentation{
             position: absolute;
@@ -256,8 +254,8 @@ background-repeat: no-repeat;
             font-size: 21px;
         }
         .sidepub{
-            display: none;
-             }
+         display: none;   
+        }
        .row2pic{
         grid-column: 1/-1;
        }
@@ -282,7 +280,7 @@ background-repeat: no-repeat;
     
 /*Queries for mobile phones*/
 
-@media only screen and (max-width: 640px) and (min-width: 0px) {
+@media only screen and (max-width: 640px) {
     #bigBox{
         width: 100%;
         display: grid;
@@ -307,7 +305,6 @@ background-repeat: no-repeat;
     .header ul li{
         display: none;  
         width: 100%;
-       
     }
     .header ul li a{
         color: #fff;
@@ -358,6 +355,7 @@ background-repeat: no-repeat;
     }
    .sidepub{
     grid-column: 1/-1;
+    display: block;
     margin-top: -25px;
    }
    .row2pic {
@@ -368,7 +366,7 @@ background-repeat: no-repeat;
    
    }
    .row3pub{
-   display: none; 
+   display: none;
    }
    
     footer{
@@ -381,6 +379,12 @@ background-repeat: no-repeat;
         margin-bottom: 5px;
     }
 
+}
+
+@media only screen and (max-width: 320px) {
+    #bigBox{
+        width: 320px;
+    }
 }
 
 
