@@ -165,7 +165,6 @@ footer{
     }
     .header ul{
         width: 100%;
-        background-color: #000000;
        margin-top: 20px;
        margin-right: 0;
         
@@ -175,10 +174,9 @@ footer{
      text-align:center;
      font-size: 13px;
      margin-bottom: 10px;
-     
         }
     .header ul li a{
-        color: #fff;
+        color: #000000;
     }
     .toggle{
         display: block;
@@ -213,6 +211,9 @@ footer{
         width: 100%;
     }
     
+    .header ul{
+        margin-left: -7px;
+    }
     .header ul li{
         display: none;
     }
@@ -228,8 +229,9 @@ footer{
    
     .firstpub{
       width: 100%;
-      padding: 20px;
-      font-size: 15px;
+      padding: 15px;
+      margin-left: -10px;
+      font-size: 16px;
     }
     .box {
         width: 100%;
@@ -239,7 +241,7 @@ footer{
     }
    footer{
        width: 100%;
-       height: 91px;
+       height: 100px;
    }
    .list1 li {
        margin: 5px;
@@ -264,19 +266,28 @@ footer{
          width: 100%;
          padding: 40px;
          margin-left: -30px;
-         font-size: 13px;
+         font-size: 15px;
     }
     
     .box {
         width: 100%;
+        margin-left: -17px;
     }
     .box .details{
         width: 100%;
         margin-left:-10px;
         position: absolute;
-        left: -5%;
+        left: -1%;
     }
     .box .details .content{
         padding: 13%;
     }
+    
+    footer{
+        height: 120px;
+    }
+   .list1 li {
+    display: block;
+    margin-left: -9%;
+}
 }

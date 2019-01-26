@@ -15,7 +15,7 @@ html,body{
  background-position: center;
  background-size: cover;
 }
-#bigBox{
+#container{
     width: 100%;
      display: grid;
      grid-template-columns: repeat(6,minmax(100px,1fr));
@@ -101,9 +101,10 @@ html,body{
     margin-right: 40px;
     margin-bottom: 0;
    height: auto;
-    padding: 5px;
-   
+    padding: 15px;
+
 }
+
 footer{
     grid-column: 1/-1;
     background-color: #1f1f1f;
@@ -126,24 +127,21 @@ footer{
 /*Queries for tablets*/
 @media only screen and (max-width: 960px) {
    
-    #bigBox{
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(6,minmax(80px,1fr));
+    #container{
+     width: 100%;
+     display: grid;
+     grid-template-columns: repeat(6,minmax(80px,1fr));
      grid-template-rows: minmax(50px,auto);
      grid-gap: 5px;
     }
     .top{
-       
         width: 100%;
     }
     
     .header ul{
         width: 100%;
-        background-color: #000000;
        margin-top: 20px;
        margin-right: 0;
-        
     }
     .header ul li{
      display: none; 
@@ -154,12 +152,12 @@ footer{
      
         }
     .header ul li a{
-        color: #fff;
+        color: #000000;
     }
     
 .header ul li a:hover {
-    background-color:#fff;
-    color: #000000;
+    background-color:#000000;
+    color: #fff;
  }
     .toggle{
         display: block;
@@ -169,6 +167,7 @@ footer{
         color: #1f1f1f;
     }
     .ligne1{
+        grid-column: 1/-1;
        margin: 0 auto;
     }
 
@@ -191,6 +190,7 @@ footer{
 /*Queries for mobile phone*/
 @media only screen and (max-width: 640px) {
     
+    
     #bigBox{
         width: 100%;
         display: grid;
@@ -201,21 +201,75 @@ footer{
     .top{
         width: 100%;
     }
+
+    .header ul{
+        margin-right: 13%;
+    }
     .header ul li{
         display: none;
     }
     .toggle{
         display: block;
-        margin-right: 35px;
+        margin-right: 27%;
         margin-top: 11px;
-        font-size: 20px;
+        font-size: 23px;
     }
-        
+    
+    .bigBox{
+    width: 67%;
+    margin-left: 18px;
+    }
+
+    .ligne1 h2{
+        margin-left: -47%;
+    }
    footer{
        height: 100px;
    }
 
+   footer ul {
+   margin-left: -20%;
+   }
+   footer .list1 li {
+    display: block;
+    padding: 5px;
+}
+}
+   
 
+@media only screen and (max-width: 320px) {
+    #container{
+        width: 320px;
+    }
+
+    .toggle{
+       margin-right: 39%;
+       margin-top: 3%;
+       font-size: 25px;
+    }
+    .bigBox{
+        width: 63%;
+        margin-left: -2px;
+    }
+
+    .header ul{
+        margin-right: 17%;
+        margin-top: -5px;
+    }
+    .ligne1 h2{
+        margin-left: -60%;
+    }
+    
+   footer{
+    height: 100px;
 }
 
+footer ul {
+margin-left: -30%;
+}
+footer .list1 li {
+ display: block;
+ padding: 5px;
+}
 
+}

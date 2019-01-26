@@ -125,11 +125,11 @@ footer{
 /*Queries for tablets*/
 @media only screen and (max-width: 959px){   
     #bigBox{
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(6, minmax(80px, 1fr));
-     grid-template-rows: minmax(50px,auto);
-     grid-gap: 5px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(80px, 1fr));
+    grid-template-rows: minmax(50px,auto);
+    grid-gap: 5px;
     }
     .top{
         width: 100%;
@@ -184,9 +184,9 @@ footer{
 @media only screen and (max-width: 640px) {
    
     #bigBox{
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(6,minmax(50px,1fr));
+     width: 100%;
+     display: grid;
+     grid-template-columns: repeat(6,minmax(50px,1fr));
      grid-template-rows: minmax(50px,auto);
      grid-gap: 5px;
     }
