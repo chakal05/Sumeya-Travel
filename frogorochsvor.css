@@ -142,6 +142,7 @@ footer{
         width: 100%;
        margin-top: 20px;
        margin-right: 0;
+       background-color: #000000;
     }
     .header ul li{
      display: none; 
@@ -149,10 +150,9 @@ footer{
      font-size: 13px;
      margin-bottom: 20px;
      padding: 5px;
-     
         }
     .header ul li a{
-        color: #000000;
+        color: #fff;
     }
     
 .header ul li a:hover {
