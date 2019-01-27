@@ -210,7 +210,7 @@ footer{
     .top{
         width: 100%;
     }
-    
+   
     .header ul{
         margin-left: -7px;
     }
@@ -261,7 +261,9 @@ footer{
     .toggle{
         margin-right: 19%;
         }
-    
+    .header ul {
+        margin-right: 9%;
+    }
     .firstpub{
          width: 100%;
          padding: 40px;
