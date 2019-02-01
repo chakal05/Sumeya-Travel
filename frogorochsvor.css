@@ -145,11 +145,11 @@ footer{
        background-color: #000000;
     }
     .header ul li{
-     display: none; 
-     text-align:center;
-     font-size: 13px;
-     margin-bottom: 20px;
-     padding: 5px;
+        display: none; 
+        text-align:center;
+        font-size: 13px;
+        margin-bottom: 20px;
+        padding: 5px;
         }
     .header ul li a{
         color: #fff;
@@ -207,7 +207,6 @@ footer{
     }
     .header ul li{
         display: none;
-        font-size: 15px;
     }
     .toggle{
         display: block;
