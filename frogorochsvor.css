@@ -142,14 +142,14 @@ footer{
         width: 100%;
        margin-top: 20px;
        margin-right: 0;
-       background-color: #000000;
+       background-color: #1f1f1f;
     }
     .header ul li{
         display: none; 
         text-align:center;
-        font-size: 13px;
         margin-bottom: 20px;
         padding: 5px;
+        font-size: 13px;
         }
     .header ul li a{
         color: #fff;
