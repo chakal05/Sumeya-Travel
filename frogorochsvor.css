@@ -192,11 +192,11 @@ footer{
     
     
     #bigBox{
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(6,minmax(60px,1fr));
-     grid-template-rows: minmax(50px,auto);
-     grid-gap: 5px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6,minmax(60px,1fr));
+    grid-template-rows: minmax(50px,auto);
+    grid-gap: 5px;
     }
     .top{
         width: 100%;
@@ -257,6 +257,11 @@ footer{
         margin-right: 17%;
         margin-top: -5px;
     }
+
+    .header ul{
+        font-size: 13px;
+    }
+
     .ligne1 h2{
         margin-left: -60%;
     }
