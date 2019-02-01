@@ -430,17 +430,17 @@ footer{
    }
     .header ul{
         width: 100%;
-        background-color: #1F1F1F;
-       margin-bottom: 20px;
+        background-color: #1d1717;
+       margin-top: 20px;
        margin-right: 0;
-       height: auto;
        display: none;
-      
+      height: 230px;
     }
     .header ul li{
-     display: none; 
+     display: none;  
      text-align:center;
      font-size: 13px;
+     
         }
         .header ul li a {
             color: #fff;
@@ -612,4 +612,16 @@ footer{
         margin-left: 10%;
     }
 }
-   
+
+
+@media only screen and (max-width: 320px) {
+    #bigBox{
+        width: 320px;
+    }
+
+    .tata{
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+
+}

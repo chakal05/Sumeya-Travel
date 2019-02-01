@@ -165,9 +165,11 @@ footer{
     }
     .header ul{
         width: 100%;
-       margin-top: 20px;
-       margin-right: 0;
-        
+        margin-top: 20px;
+        margin-right: 0;
+        height: 250px;
+        background-color: #1F1F1F;
+        display: none;
     }
     .header ul li{
      display: none; 
@@ -176,7 +178,7 @@ footer{
      margin-bottom: 10px;
         }
     .header ul li a{
-        color: #000000;
+        color: #fff;
     }
     .toggle{
         display: block;

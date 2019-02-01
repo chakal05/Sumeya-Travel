@@ -156,13 +156,11 @@ footer{
         background-color: #000000;
        margin-top: 20px;
        margin-right: 0;
-        
     }
     .header ul li{
      display: none; 
      text-align:center;
      font-size: 13px;
-     
         }
     .header ul li a{
         color: #fff;
