@@ -140,25 +140,22 @@ footer{
     
     .header ul{
         width: 100%;
+       background-color: #1F1F1F;
        margin-top: 20px;
        margin-right: 0;
-       background-color: #1f1f1f;
     }
     .header ul li{
-        display: none; 
-        text-align:center;
-        margin-bottom: 20px;
-        padding: 5px;
-        font-size: 13px;
+     display: none; 
+     text-align:center;
+     font-size: 13px;
+     margin-bottom: 20px;
+     padding: 5px;
+     
         }
     .header ul li a{
         color: #fff;
     }
     
-.header ul li a:hover {
-    background-color:#000000;
-    color: #fff;
- }
     .toggle{
         display: block;
         margin: 21px;
@@ -166,6 +163,7 @@ footer{
         background-color:#fff;
         color: #1f1f1f;
     }
+
     .ligne1{
         grid-column: 1/-1;
        margin: 0 auto;
@@ -208,12 +206,14 @@ footer{
     .header ul li{
         display: none;
     }
+
     .toggle{
         display: block;
         margin-right: 29%;
         margin-top: 11px;
         font-size: 20px;
     }
+    
     
     .bigBox{
     width: 67%;
@@ -242,6 +242,16 @@ footer{
         width: 320px;
     }
 
+    
+    .header ul{
+        margin-right: 17%;
+        margin-top: -5px;
+    }
+
+    .header ul{
+        font-size: 11px;
+    }
+
    
     .toggle{
        margin-right: 39%;
@@ -251,15 +261,6 @@ footer{
     .bigBox{
         width: 63%;
         margin-left: -2px;
-    }
-
-    .header ul{
-        margin-right: 17%;
-        margin-top: -5px;
-    }
-
-    .header ul{
-        font-size: 13px;
     }
 
     .ligne1 h2{
