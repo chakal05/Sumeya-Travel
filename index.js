@@ -5,8 +5,6 @@ $(document).ready(function(){
       changeYear: true
     });
   
-
-  
     $( "#datepickera" ).datepicker({
       changeMonth: true,
       changeYear: true
