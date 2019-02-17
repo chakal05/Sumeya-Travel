@@ -1,10 +1,32 @@
 $(document).ready(function(){
-    $("#itoggle").click(function(){
-        $(".header ul li").hide(shown());
-    })
+    
+shown();
+   visa();
+})
 
+function shown(){
     $("#itoggle").click(function(){
         $(".header ul li").show(hidden());
     })
 
-})
+}
+
+function hidden(){
+    $("#itoggle").click(function(){
+        $(".header ul li").hide(shown());
+    })
+}
+
+function visaej(){
+    $("#itoggle").click(function(){
+        $(".header ul li").hide(shown());
+        
+    })
+}
+
+function visa(){
+    $("#itoggle").click(function(){
+        $(".header ul li").show(hidden());
+
+    })
+}
